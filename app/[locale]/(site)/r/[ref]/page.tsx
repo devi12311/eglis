@@ -124,7 +124,7 @@ export default async function ReservationPage({
             ) : null}
             <a
               className="flex w-full items-center justify-center gap-2 border-2 border-on-background bg-on-background px-6 py-4 font-button text-button uppercase text-caravan-cream transition-colors hover:bg-inverse-surface sm:w-auto"
-              href="tel:+355000000000"
+              href="tel:+355684413280"
             >
               <Icon name="phone" className="text-[18px]" /> Call for assistance
             </a>

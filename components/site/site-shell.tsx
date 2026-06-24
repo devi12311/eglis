@@ -73,7 +73,7 @@ export function SiteShell({ children, locale, messages }: SiteShellProps) {
       <footer className="mb-20 flex w-full flex-col items-center gap-stack-md border-t-2 border-on-background bg-on-background px-margin-mobile py-section-gap text-center text-background md:mb-0">
         <p className="mb-stack-md font-headline-lg-mobile text-headline-lg-mobile uppercase">{messages.brand}</p>
         <div className="flex flex-wrap justify-center gap-stack-md font-label-caps text-label-caps uppercase">
-          <a className="underline hover:text-burnt-earth" href="tel:+355000000000">
+          <a className="underline hover:text-burnt-earth" href="tel:+355684413280">
             Call now
           </a>
           <a className="underline hover:text-burnt-earth" href={`/${locale}/locations`}>

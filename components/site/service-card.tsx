@@ -25,7 +25,7 @@ export function ServiceCard({ service, locale }: ServiceCardProps) {
         {service.bookableOnline ? (
           <Button href={`/${locale}/book`}>Book now</Button>
         ) : (
-          <Button href="tel:+355000000000" variant="outline" icon="phone">
+          <Button href="tel:+355684413280" variant="outline" icon="phone">
             Call / Inquire
           </Button>
         )}

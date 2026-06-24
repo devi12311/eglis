@@ -50,7 +50,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
             Bring the group. Tap to call and we’ll line up back-to-back chairs.
           </p>
           <div className="mt-stack-lg flex justify-center">
-            <Button href="tel:+355000000000" variant="earth" icon="phone">
+            <Button href="tel:+355684413280" variant="earth" icon="phone">
               Call / Inquire
             </Button>
           </div>
