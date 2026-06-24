@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services &amp; Pricing - Egli's Cut Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-bright": "#fbf9f9",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#e2dfde",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#7b685e",
+                        "surface-dim": "#dbdad9",
+                        "deep-walnut": "#43342B",
+                        "inverse-surface": "#303031",
+                        "tertiary-fixed-dim": "#d9c2b5",
+                        "on-background": "#1b1c1c",
+                        "on-primary-fixed": "#1c1c15",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-secondary-container": "#636262",
+                        "primary-fixed": "#e5e2d8",
+                        "surface-container-low": "#f5f3f3",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#c9c7bc",
+                        "surface-container-highest": "#e4e2e2",
+                        "tertiary": "#6d5b51",
+                        "on-surface-variant": "#484740",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary-fixed": "#251911",
+                        "primary-container": "#f2efe4",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#6d6c64",
+                        "primary-fixed-dim": "#c9c7bc",
+                        "caravan-cream": "#F2EFE4",
+                        "outline": "#79776f",
+                        "tertiary-container": "#ffebe1",
+                        "secondary": "#5f5e5e",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#605f56",
+                        "surface-container": "#efeded",
+                        "on-primary-fixed-variant": "#48473f",
+                        "surface-variant": "#e4e2e2",
+                        "primary": "#605f56",
+                        "on-tertiary-fixed-variant": "#54433a",
+                        "utility-grey": "#E0E0E0",
+                        "inverse-on-surface": "#f2f0f0",
+                        "burnt-earth": "#C72A00",
+                        "surface": "#fbf9f9",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#474746",
+                        "outline-variant": "#c9c6bd",
+                        "on-surface": "#1b1c1c",
+                        "background": "#fbf9f9",
+                        "tertiary-fixed": "#f6ded0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Chivo"],
+                        "headline-lg": ["Chivo"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "subheading": ["Hanken Grotesk"],
+                        "display-xl-mobile": ["Chivo"],
+                        "display-xl": ["Chivo"],
+                        "button": ["Chivo"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "700"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "30px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                        "subheading": ["20px", {"lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-xl-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "display-xl": ["80px", {"lineHeight": "88px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "button": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .salty-divider {
+            border-top: 1px dashed theme('colors.on-background');
+            opacity: 0.2;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-caravan-cream text-on-background min-h-screen flex flex-col font-body-md antialiased md:pt-16 md:pb-0 pt-16 pb-20">
+<!-- TopAppBar -->
+<header class="bg-background dark:bg-on-background fixed top-0 w-full z-50 border-b-2 border-on-background dark:border-background flex justify-between items-center px-margin-mobile h-16 transition-transform duration-100 hidden md:flex">
+<button class="text-on-background dark:text-background hover:text-burnt-earth transition-colors focus:outline-none">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-on-background dark:text-background text-center flex-1">EGLI’S CUT CLUB</h1>
+<button class="text-on-background dark:text-background hover:text-burnt-earth transition-colors focus:outline-none">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</button>
+</header>
+<!-- Mobile TopAppBar (Simplified for mobile layout without explicit JSON nav structure, but matching style) -->
+<header class="bg-background fixed top-0 w-full z-50 border-b-2 border-on-background flex justify-between items-center px-margin-mobile h-16 md:hidden">
+<button class="text-on-background hover:text-burnt-earth transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-on-background">EGLI’S CUT CLUB</h1>
+<button class="text-on-background hover:text-burnt-earth transition-colors">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</button>
+</header>
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-section-gap">
+<!-- Header -->
+<section class="mb-section-gap text-center md:text-left">
+<h2 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl text-on-background uppercase mb-stack-md">SERVICES</h2>
+<p class="font-subheading text-subheading text-secondary max-w-2xl">Precision cuts, straight-razor shaves, and premium styling. Select your service below to reserve a chair.</p>
+</section>
+<!-- Main Services List -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
+<div class="col-span-1 md:col-span-8 md:col-start-3">
+<!-- Service Item 1 -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center py-stack-lg border-b border-on-background/20 group">
+<div class="flex-1 pr-4 mb-stack-md md:mb-0">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-stack-sm">The Classic Cut</h3>
+<p class="font-body-md text-body-md text-secondary">A tailored haircut finished with a hot towel neck shave and styling.</p>
+</div>
+<div class="flex flex-row md:flex-col items-center md:items-end justify-between w-full md:w-auto mt-4 md:mt-0">
+<span class="font-display-xl-mobile text-display-xl-mobile text-on-background mb-0 md:mb-stack-sm">$45</span>
+<button class="bg-on-background text-caravan-cream font-button text-button px-6 py-3 w-full md:w-auto hover:bg-burnt-earth transition-colors">BOOK NOW</button>
+</div>
+</div>
+<!-- Service Item 2 -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center py-stack-lg border-b border-on-background/20 group">
+<div class="flex-1 pr-4 mb-stack-md md:mb-0">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-stack-sm">Skin Fade</h3>
+<p class="font-body-md text-body-md text-secondary">Precision zero-fade blending, hot towel neck shave, and premium styling products.</p>
+</div>
+<div class="flex flex-row md:flex-col items-center md:items-end justify-between w-full md:w-auto mt-4 md:mt-0">
+<span class="font-display-xl-mobile text-display-xl-mobile text-on-background mb-0 md:mb-stack-sm">$55</span>
+<button class="bg-on-background text-caravan-cream font-button text-button px-6 py-3 w-full md:w-auto hover:bg-burnt-earth transition-colors">BOOK NOW</button>
+</div>
+</div>
+<!-- Service Item 3 -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center py-stack-lg border-b border-on-background/20 group">
+<div class="flex-1 pr-4 mb-stack-md md:mb-0">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-stack-sm">Beard Trim &amp; Lineup</h3>
+<p class="font-body-md text-body-md text-secondary">Detailed beard sculpting with straight razor edges and conditioning beard oil.</p>
+</div>
+<div class="flex flex-row md:flex-col items-center md:items-end justify-between w-full md:w-auto mt-4 md:mt-0">
+<span class="font-display-xl-mobile text-display-xl-mobile text-on-background mb-0 md:mb-stack-sm">$25</span>
+<button class="bg-on-background text-caravan-cream font-button text-button px-6 py-3 w-full md:w-auto hover:bg-burnt-earth transition-colors">BOOK NOW</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Packages (Bento Grid Style) -->
+<section class="mb-section-gap">
+<h2 class="font-subheading text-subheading text-on-background mb-stack-lg uppercase tracking-wider text-center md:text-left">Signature Packages</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Package 1 -->
+<div class="bg-surface p-stack-lg border border-on-background/10 hover:border-deep-walnut/30 transition-colors flex flex-col justify-between h-full min-h-[300px]">
+<div>
+<div class="flex justify-between items-start mb-stack-md">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">Summer Fresh Pass</h3>
+<span class="font-display-xl-mobile text-display-xl-mobile text-on-background leading-none">$120</span>
+</div>
+<p class="font-body-md text-body-md text-secondary mb-stack-lg">3 Classic Cuts to keep you sharp all summer. Non-transferable, valid for 3 months from purchase.</p>
+</div>
+<button class="bg-on-background text-caravan-cream font-button text-button px-6 py-3 w-full hover:bg-burnt-earth transition-colors mt-auto">BOOK PACKAGE</button>
+</div>
+<!-- Package 2 -->
+<div class="bg-deep-walnut text-caravan-cream p-stack-lg flex flex-col justify-between h-full min-h-[300px]">
+<div>
+<div class="flex justify-between items-start mb-stack-md">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-caravan-cream">Beach to Night</h3>
+<span class="font-display-xl-mobile text-display-xl-mobile text-caravan-cream leading-none">$85</span>
+</div>
+<p class="font-body-md text-body-md text-caravan-cream/80 mb-stack-lg">The ultimate reset. Includes a Skin Fade, full Beard Trim, hot towel treatment, and a complimentary beverage.</p>
+</div>
+<button class="border border-caravan-cream text-caravan-cream hover:bg-caravan-cream hover:text-deep-walnut font-button text-button px-6 py-3 w-full transition-colors mt-auto">BOOK PACKAGE</button>
+</div>
+</div>
+</section>
+<!-- The Crew Booking -->
+<section class="bg-background border-t-2 border-b-2 border-on-background py-section-gap relative overflow-hidden">
+<!-- Subtle background texture indication -->
+<div class="absolute inset-0 opacity-5" data-alt="A subtle, highly textured concrete wall surface in a minimalist urban setting, providing a very faint, gritty light-mode background pattern, with high contrast monochrome lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBROmWZCmspPJq8E9ycZ7mX4W0z3FbGSMnuS8uvw_-Lw2JcIetBP2zHTKShftDdNIEAUDbSpxC-WvcVoX-7_UcKjspxh8ELEpsC81TLq23WtbCK2225K1Wt482S0Jc9vPXWWR8Dv7kRc5673um3gFdmqoBOBC0DdVFVe1NErz7XzT8uLl2vGbBYhkuVbphO3yCTfFKVy06wR4K2L7ktqUxDE3yxaO68qUmzF6LBLfHA0DO4WUGSzrOi4StnX7B_yUBwRpDGMucjGA')"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center px-margin-mobile md:px-0">
+<div class="col-span-1 md:col-span-5 md:col-start-2 mb-stack-lg md:mb-0">
+<img class="w-full aspect-[4/5] object-cover border border-on-background/10" data-alt="A black and white, high-contrast, editorial style photograph of three stylish friends sitting together in a modern, minimalist barbershop, laughing and enjoying a drink, lit by soft natural light creating a premium urban vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6VLwvTy9bAUSdonRjgyQTfT6joaxsbLw_hd_MbjiW7g7zreuWMyeao77WGWgWOBDaZJh18mmo10KWC1i0RFrE8mB4KDOPAS6A47fHT7RQI4n_TZiGig2yoY0bj43Wt7EDvYVovcsmljuI0x9oSUInpVUdVEIYfC9qyjdSZFUhMWcC1HoXGploSsn7Ibngc26IN0I0XiWzrZdQWhaMBXpUIsgEq-BkuQsl_G04se5yFX3qBlghadmXColzKVxpwnvMxo-1DC6lnA"/>
+</div>
+<div class="col-span-1 md:col-span-5 md:col-start-8">
+<h2 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl text-on-background uppercase mb-stack-md">THE CREW BOOKING</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-stack-lg">Gather the boys. Book consecutive slots for 2-4 friends. Enjoy cold drinks, good music, and exclusive use of the lounge area while you wait.</p>
+<button class="bg-burnt-earth text-caravan-cream font-button text-button px-8 py-4 w-full md:w-auto hover:bg-on-background transition-colors">INQUIRE FOR GROUP</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 pb-safe bg-on-background dark:bg-background border-t-2 border-on-background shadow-[0_-2px_0_0_rgba(27,28,28,1)] md:hidden">
+<a class="flex flex-col items-center justify-center text-background dark:text-on-background opacity-70 hover:opacity-100 transition-opacity w-1/4" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-label-caps text-label-caps text-[10px]">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-background dark:text-on-background opacity-70 hover:opacity-100 transition-opacity w-1/4" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="content_cut">content_cut</span>
+<span class="font-label-caps text-label-caps text-[10px]">BOOK</span>
+</a>
+<a class="flex flex-col items-center justify-center text-background dark:text-on-background opacity-70 hover:opacity-100 transition-opacity w-1/4" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="map">map</span>
+<span class="font-label-caps text-label-caps text-[10px]">LOCATION</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-burnt-earth text-background px-4 py-1 rounded-none translate-y-0.5 transition-transform w-1/4 h-full" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="grid_view">grid_view</span>
+<span class="font-label-caps text-label-caps text-[10px]">MENU</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full bg-on-background dark:bg-background border-t-2 border-on-background dark:border-background flex flex-col items-center py-section-gap px-margin-mobile text-center gap-stack-md mt-auto hidden md:flex">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-background mb-stack-md uppercase font-bold tracking-tight">EGLI'S CUT CLUB</div>
+<div class="flex flex-wrap justify-center gap-stack-lg mb-stack-lg">
+<a class="font-label-caps text-label-caps text-background dark:text-on-background hover:text-burnt-earth underline transition-colors" href="#">CALL NOW</a>
+<a class="font-label-caps text-label-caps text-background dark:text-on-background hover:text-burnt-earth underline transition-colors" href="#">DIRECTIONS</a>
+<a class="font-label-caps text-label-caps text-background dark:text-on-background hover:text-burnt-earth underline transition-colors" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-label-caps text-background dark:text-on-background hover:text-burnt-earth underline transition-colors" href="#">PRIVACY</a>
+</div>
+<p class="font-label-caps text-label-caps text-background dark:text-on-background opacity-50">© 2024 EGLI'S CUT CLUB. COME SALTY. LEAVE SHARP.</p>
+</footer>
+</body></html>

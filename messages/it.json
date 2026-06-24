@@ -1,0 +1,25 @@
+{
+  "brand": "Eglis Cut Club",
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "book": "Prenota",
+    "locations": "Sedi",
+    "admin": "Admin"
+  },
+  "home": {
+    "eyebrow": "Tagli estivi a Saranda",
+    "title": "Tagli netti dalla sedia del caravan.",
+    "intro": "Prenotazione essenziale per spiaggia, serate e reset regolari.",
+    "cta": "Prenota un taglio"
+  },
+  "booking": {
+    "title": "Prenota il tuo slot",
+    "intro": "Fresh Cut e Full Reset sono gli unici servizi prenotabili online nella v1.",
+    "fullyBooked": "Tutto pieno per questa data. Prova un altro giorno o chiama Eglis."
+  },
+  "admin": {
+    "title": "Admin",
+    "intro": "Gestisci prenotazioni, disponibilita, stagione e servizi."
+  }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Egli's Cut Club - Booking Confirmation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;800;900&amp;family=Hanken+Grotesk:wght@400;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-bright": "#fbf9f9",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#e2dfde",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#7b685e",
+                        "surface-dim": "#dbdad9",
+                        "deep-walnut": "#43342B",
+                        "inverse-surface": "#303031",
+                        "tertiary-fixed-dim": "#d9c2b5",
+                        "on-background": "#1b1c1c",
+                        "on-primary-fixed": "#1c1c15",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-secondary-container": "#636262",
+                        "primary-fixed": "#e5e2d8",
+                        "surface-container-low": "#f5f3f3",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#c9c7bc",
+                        "surface-container-highest": "#e4e2e2",
+                        "tertiary": "#6d5b51",
+                        "on-surface-variant": "#484740",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary-fixed": "#251911",
+                        "primary-container": "#f2efe4",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#6d6c64",
+                        "primary-fixed-dim": "#c9c7bc",
+                        "caravan-cream": "#F2EFE4",
+                        "outline": "#79776f",
+                        "tertiary-container": "#ffebe1",
+                        "secondary": "#5f5e5e",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#605f56",
+                        "surface-container": "#efeded",
+                        "on-primary-fixed-variant": "#48473f",
+                        "surface-variant": "#e4e2e2",
+                        "primary": "#605f56",
+                        "on-tertiary-fixed-variant": "#54433a",
+                        "utility-grey": "#E0E0E0",
+                        "inverse-on-surface": "#f2f0f0",
+                        "burnt-earth": "#C72A00",
+                        "surface": "#fbf9f9",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#474746",
+                        "outline-variant": "#c9c6bd",
+                        "on-surface": "#1b1c1c",
+                        "background": "#fbf9f9",
+                        "tertiary-fixed": "#f6ded0"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "section-gap": "120px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-md": "16px"
+                    },
+                    fontFamily: {
+                        "headline-lg-mobile": ["Chivo"],
+                        "headline-lg": ["Chivo"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "subheading": ["Hanken Grotesk"],
+                        "display-xl-mobile": ["Chivo"],
+                        "display-xl": ["Chivo"],
+                        "button": ["Chivo"]
+                    },
+                    fontSize: {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "subheading": ["20px", { "lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-xl-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "display-xl": ["80px", { "lineHeight": "88px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "button": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased selection:bg-on-background selection:text-background">
+<!-- Top App Bar (Suppressed on this transactional screen as per instructions, but adding a minimal brand anchor instead) -->
+<header class="w-full flex justify-center items-center py-6 px-margin-mobile">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-on-background">EGLI’S CUT CLUB</h1>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow flex flex-col items-center justify-center px-margin-mobile py-stack-lg max-w-container-max mx-auto w-full md:grid md:grid-cols-12 md:gap-gutter md:px-margin-desktop md:items-start">
+<!-- Confirmation Content -->
+<div class="w-full flex flex-col items-center text-center md:col-span-8 md:col-start-3 md:pt-16">
+<!-- Success Icon -->
+<div class="mb-stack-md animate-bounce" style="animation-iteration-count: 3;">
+<span class="material-symbols-outlined text-[80px] text-on-background" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Headline -->
+<h2 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl mb-stack-sm text-balance">YOU'RE ALL SET.</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant bg-caravan-cream px-4 py-2 rounded-none border border-deep-walnut/10 mb-stack-lg uppercase tracking-widest inline-block">SCREENSHOT THIS.</p>
+<!-- Summary Card -->
+<div class="w-full max-w-md bg-caravan-cream border-2 border-on-background p-6 md:p-8 flex flex-col gap-stack-md text-left relative shadow-[4px_4px_0_0_rgba(27,28,28,1)]" id="receipt-card">
+<!-- Ticket Header -->
+<div class="flex justify-between items-end border-b-2 border-on-background/20 pb-4">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">CLIENT</span>
+<span class="font-subheading text-subheading text-on-background uppercase">John Doe</span>
+</div>
+<div class="text-right">
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">ID</span>
+<span class="font-label-caps text-label-caps text-on-background">#ECC-8942</span>
+</div>
+</div>
+<!-- Ticket Details -->
+<div class="grid grid-cols-2 gap-y-6 py-2">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">LOCATION</span>
+<span class="font-body-md text-body-md text-on-background uppercase">Saranda Caravan</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">SERVICE</span>
+<span class="font-body-md text-body-md text-on-background uppercase">Full Reset</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">DATE</span>
+<span class="font-body-md text-body-md text-on-background uppercase">Tue, Jul 15</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-1">TIME</span>
+<span class="font-body-md text-body-md text-on-background uppercase">6:40 PM</span>
+</div>
+</div>
+<!-- Ticket Footer (Price) -->
+<div class="border-t-2 border-on-background/20 pt-4 flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">DUE AT SHOP</span>
+<span class="font-subheading text-subheading text-on-background">1,500 ALL</span>
+</div>
+<!-- Salty Divider overlay aesthetic -->
+<div class="absolute -left-2 top-1/2 w-4 h-8 bg-background border-r-2 border-on-background rounded-r-full border-t-2 border-b-2"></div>
+<div class="absolute -right-2 top-1/2 w-4 h-8 bg-background border-l-2 border-on-background rounded-l-full border-t-2 border-b-2 shadow-[-4px_0_0_0_rgba(27,28,28,1)]"></div>
+</div>
+<!-- Notice -->
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-md max-w-sm text-balance">Payment is completed at the shop. No online payment needed.</p>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row gap-4 mt-stack-lg w-full max-w-md justify-center">
+<button class="font-button text-button bg-transparent border-2 border-on-background text-on-background px-6 py-4 uppercase w-full sm:w-auto hover:bg-on-background hover:text-background transition-colors duration-200">
+                    Cancel Reservation
+                </button>
+<button class="font-button text-button bg-on-background text-caravan-cream px-6 py-4 uppercase w-full sm:w-auto hover:bg-deep-walnut transition-colors duration-200 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="phone">phone</span>
+                    Call for Assistance
+                </button>
+</div>
+<div class="mt-section-gap w-full text-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-burnt-earth transition-colors underline underline-offset-4" href="#">RETURN TO HOME</a>
+</div>
+</div>
+</main>
+<!-- Navigation Suppressed for this transactional screen -->
+</body></html>

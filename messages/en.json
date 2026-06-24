@@ -1,0 +1,25 @@
+{
+  "brand": "Eglis Cut Club",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "book": "Book",
+    "locations": "Locations",
+    "admin": "Admin"
+  },
+  "home": {
+    "eyebrow": "Saranda summer cuts",
+    "title": "Sharp cuts from the caravan chair.",
+    "intro": "A stripped-back reservation experience for beach days, late nights, and regular resets.",
+    "cta": "Book a Cut"
+  },
+  "booking": {
+    "title": "Book your slot",
+    "intro": "Fresh Cut and Full Reset are the only online-bookable services for v1.",
+    "fullyBooked": "Fully booked for this date. Try another day or call Eglis."
+  },
+  "admin": {
+    "title": "Admin",
+    "intro": "Manage reservations, availability, season settings, and services."
+  }
+}

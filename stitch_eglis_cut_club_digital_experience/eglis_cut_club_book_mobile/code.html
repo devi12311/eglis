@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Booking Selection - Egli's Cut Club</title>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;800;900&amp;family=Hanken+Grotesk:wght@400;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#1c1b1b",
+                      "surface-bright": "#fbf9f9",
+                      "on-error-container": "#93000a",
+                      "secondary-container": "#e2dfde",
+                      "error": "#ba1a1a",
+                      "on-tertiary-container": "#7b685e",
+                      "surface-dim": "#dbdad9",
+                      "deep-walnut": "#43342B",
+                      "inverse-surface": "#303031",
+                      "tertiary-fixed-dim": "#d9c2b5",
+                      "on-background": "#1b1c1c",
+                      "on-primary-fixed": "#1c1c15",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-secondary-container": "#636262",
+                      "primary-fixed": "#e5e2d8",
+                      "surface-container-low": "#f5f3f3",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#c9c7bc",
+                      "surface-container-highest": "#e4e2e2",
+                      "tertiary": "#6d5b51",
+                      "on-surface-variant": "#484740",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "surface-container-high": "#e9e8e7",
+                      "on-tertiary-fixed": "#251911",
+                      "primary-container": "#f2efe4",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#6d6c64",
+                      "primary-fixed-dim": "#c9c7bc",
+                      "caravan-cream": "#F2EFE4",
+                      "outline": "#79776f",
+                      "tertiary-container": "#ffebe1",
+                      "secondary": "#5f5e5e",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#605f56",
+                      "surface-container": "#efeded",
+                      "on-primary-fixed-variant": "#48473f",
+                      "surface-variant": "#e4e2e2",
+                      "primary": "#605f56",
+                      "on-tertiary-fixed-variant": "#54433a",
+                      "utility-grey": "#E0E0E0",
+                      "inverse-on-surface": "#f2f0f0",
+                      "burnt-earth": "#C72A00",
+                      "surface": "#fbf9f9",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#474746",
+                      "outline-variant": "#c9c6bd",
+                      "on-surface": "#1b1c1c",
+                      "background": "#fbf9f9",
+                      "tertiary-fixed": "#f6ded0"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "container-max": "1280px",
+                      "margin-mobile": "20px",
+                      "stack-lg": "32px",
+                      "stack-sm": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Chivo"
+                      ],
+                      "headline-lg": [
+                              "Chivo"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "subheading": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-xl-mobile": [
+                              "Chivo"
+                      ],
+                      "display-xl": [
+                              "Chivo"
+                      ],
+                      "button": [
+                              "Chivo"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "38px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "26px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "30px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "subheading": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-xl-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "52px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "display-xl": [
+                              "80px",
+                              {
+                                      "lineHeight": "88px",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "button": [
+                              "14px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .salty-divider {
+            border-top: 1px dashed rgba(242, 239, 228, 0.2);
+            margin: 2rem 0;
+        }
+        /* Custom scrollbar for horizontal lists */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-on-background text-caravan-cream font-body-md min-h-screen pt-16 pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background dark:bg-on-background border-b-2 border-on-background dark:border-background flat no shadows flex justify-between items-center px-margin-mobile h-16 transition-colors">
+<button class="text-on-background dark:text-background hover:text-burnt-earth transition-colors" data-icon="menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-on-background dark:text-background uppercase">EGLI’S CUT CLUB</h1>
+<button class="text-on-background dark:text-background hover:text-burnt-earth transition-colors" data-icon="location_on">
+<span class="material-symbols-outlined">location_on</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-section-gap flex flex-col gap-section-gap">
+<!-- Header Section -->
+<section class="flex flex-col gap-stack-sm md:grid md:grid-cols-12">
+<div class="md:col-span-8 md:col-start-3 text-center md:text-left">
+<h2 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl text-caravan-cream uppercase tracking-tighter">BOOK YOUR CUT</h2>
+<p class="font-body-lg text-body-lg text-surface-dim mt-stack-sm max-w-2xl">Select your service, choose a time, and come salty.</p>
+</div>
+</section>
+<!-- Service Selection -->
+<section class="flex flex-col gap-stack-lg md:grid md:grid-cols-12">
+<div class="md:col-span-4 md:col-start-3">
+<h3 class="font-subheading text-subheading text-caravan-cream mb-stack-sm">1. SELECT SERVICE</h3>
+<div class="h-1 w-12 bg-burnt-earth mb-stack-lg"></div>
+</div>
+<div class="md:col-span-8 md:col-start-3 flex flex-col gap-stack-md">
+<!-- Card 1 -->
+<div class="group relative bg-on-background border border-deep-walnut hover:border-caravan-cream p-stack-lg cursor-pointer transition-colors duration-300">
+<div class="flex justify-between items-start mb-stack-sm">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-caravan-cream uppercase">FRESH CUT</h4>
+<span class="font-label-caps text-label-caps bg-surface-dim text-on-background px-3 py-1 mt-1">1,000 ALL</span>
+</div>
+<div class="flex justify-between items-end mt-stack-lg">
+<p class="font-body-md text-body-md text-surface-dim max-w-[70%]">Haircut only. Sharp, clean, and classic.</p>
+<span class="font-label-caps text-label-caps text-caravan-cream flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 30 MIN
+                        </span>
+</div>
+<div class="absolute right-stack-lg top-stack-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-burnt-earth">check_circle</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-on-background border border-deep-walnut hover:border-caravan-cream p-stack-lg cursor-pointer transition-colors duration-300">
+<div class="flex justify-between items-start mb-stack-sm">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-caravan-cream uppercase">FULL RESET</h4>
+<span class="font-label-caps text-label-caps bg-surface-dim text-on-background px-3 py-1 mt-1">1,500 ALL</span>
+</div>
+<div class="flex justify-between items-end mt-stack-lg">
+<p class="font-body-md text-body-md text-surface-dim max-w-[70%]">Haircut, beard modelling &amp; hot towel waxing.</p>
+<span class="font-label-caps text-label-caps text-caravan-cream flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 45 MIN
+                        </span>
+</div>
+</div>
+<!-- Package Card -->
+<div class="group relative bg-deep-walnut bg-opacity-30 border border-burnt-earth p-stack-lg cursor-pointer transition-colors duration-300 mt-stack-sm">
+<div class="absolute top-0 left-0 bg-burnt-earth px-3 py-1 font-label-caps text-label-caps text-caravan-cream -translate-y-1/2 ml-stack-lg">SPECIAL PACKAGE</div>
+<div class="flex justify-between items-start mb-stack-sm mt-stack-sm">
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-caravan-cream uppercase">SUMMER PASS</h4>
+<span class="font-label-caps text-label-caps bg-burnt-earth text-caravan-cream px-3 py-1 mt-1">2,700 ALL</span>
+</div>
+<div class="flex justify-between items-end mt-stack-lg">
+<p class="font-body-md text-body-md text-surface-dim max-w-[70%]">3 appointments valid for the season. Keep it fresh.</p>
+<span class="font-label-caps text-label-caps text-caravan-cream flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">confirmation_number</span> 3 CUTS
+                        </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Confirmation -->
+<section class="flex flex-col gap-stack-lg md:grid md:grid-cols-12 border-t border-b border-deep-walnut py-stack-lg border-opacity-50">
+<div class="md:col-span-4 md:col-start-3 flex items-center">
+<h3 class="font-subheading text-subheading text-caravan-cream">2. LOCATION</h3>
+</div>
+<div class="md:col-span-8 md:col-start-3 flex items-center justify-between">
+<div class="flex items-center gap-stack-md">
+<span class="material-symbols-outlined text-burnt-earth text-3xl">location_on</span>
+<div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-caravan-cream uppercase">SARANDA HQ</p>
+<p class="font-body-md text-body-md text-surface-dim">Rruga Jonianet, Sarandë</p>
+</div>
+</div>
+<button class="font-label-caps text-label-caps text-surface-dim hover:text-caravan-cream underline underline-offset-4">CHANGE</button>
+</div>
+</section>
+<!-- Date & Time Picker -->
+<section class="flex flex-col gap-stack-lg md:grid md:grid-cols-12">
+<div class="md:col-span-4 md:col-start-3">
+<h3 class="font-subheading text-subheading text-caravan-cream mb-stack-sm">3. DATE &amp; TIME</h3>
+<div class="h-1 w-12 bg-burnt-earth mb-stack-lg"></div>
+</div>
+<div class="md:col-span-8 md:col-start-3 flex flex-col gap-stack-md">
+<!-- Date Ribbon -->
+<div class="flex gap-stack-sm overflow-x-auto hide-scrollbar pb-2">
+<button class="flex flex-col items-center justify-center min-w-[80px] h-[90px] border border-deep-walnut bg-deep-walnut text-caravan-cream transition-colors">
+<span class="font-label-caps text-label-caps opacity-70">TODAY</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile mt-1">12</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[80px] h-[90px] border border-deep-walnut hover:border-caravan-cream text-surface-dim transition-colors">
+<span class="font-label-caps text-label-caps opacity-70">THU</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile mt-1">13</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[80px] h-[90px] border border-deep-walnut hover:border-caravan-cream text-surface-dim transition-colors">
+<span class="font-label-caps text-label-caps opacity-70">FRI</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile mt-1">14</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[80px] h-[90px] border border-deep-walnut hover:border-caravan-cream text-surface-dim transition-colors">
+<span class="font-label-caps text-label-caps opacity-70">SAT</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile mt-1">15</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[80px] h-[90px] border border-deep-walnut hover:border-caravan-cream text-surface-dim transition-colors">
+<span class="font-label-caps text-label-caps opacity-70">SUN</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile mt-1">16</span>
+</button>
+</div>
+<!-- Fully Booked State -->
+<div class="mt-stack-lg bg-surface-dim bg-opacity-5 border-l-4 border-burnt-earth p-stack-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-stack-md">
+<div>
+<p class="font-subheading text-subheading text-caravan-cream flex items-center gap-2">
+<span class="material-symbols-outlined text-burnt-earth">block</span> Fully booked for today.
+                        </p>
+<p class="font-body-md text-body-md text-surface-dim mt-1">Need to squeeze in? Call Egli directly.</p>
+</div>
+<button class="bg-caravan-cream text-on-background font-button text-button px-6 py-3 uppercase tracking-wider flex items-center gap-2 hover:bg-surface-dim transition-colors w-full md:w-auto justify-center shadow-[2px_2px_0_0_#C72A00]">
+<span class="material-symbols-outlined text-[18px]">phone</span> TAP TO CALL
+                    </button>
+</div>
+<!-- Example Alternative Time Grid (Hidden for narrative, shown for structure if they pick tomorrow) -->
+<!-- 
+                <div class="grid grid-cols-3 md:grid-cols-4 gap-stack-sm mt-stack-lg">
+                    <button class="border border-deep-walnut py-3 font-label-caps text-label-caps text-surface-dim hover:border-caravan-cream hover:text-caravan-cream transition-colors line-through opacity-50 cursor-not-allowed">10:00</button>
+                    <button class="border border-deep-walnut py-3 font-label-caps text-label-caps text-surface-dim hover:border-caravan-cream hover:text-caravan-cream transition-colors">10:30</button>
+                    <button class="border border-burnt-earth bg-burnt-earth py-3 font-label-caps text-label-caps text-caravan-cream transition-colors">11:00</button>
+                    <button class="border border-deep-walnut py-3 font-label-caps text-label-caps text-surface-dim hover:border-caravan-cream hover:text-caravan-cream transition-colors">11:30</button>
+                </div> 
+                -->
+</div>
+</section>
+<!-- Final Action (Sticky Mobile) -->
+<div class="fixed bottom-20 md:bottom-0 md:relative left-0 w-full bg-on-background border-t border-deep-walnut p-margin-mobile md:p-0 md:border-none z-40 md:mt-section-gap flex justify-center">
+<button class="w-full md:w-auto min-w-[300px] bg-transparent border border-burnt-earth text-burnt-earth font-button text-button px-8 py-4 uppercase tracking-widest hover:bg-burnt-earth hover:text-caravan-cream transition-colors flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed" disabled="">
+                CONFIRM RESERVATION <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 pb-safe bg-on-background dark:bg-background border-t-2 border-on-background shadow-[0_-2px_0_0_rgba(27,28,28,1)]">
+<a class="flex flex-col items-center justify-center text-background dark:text-on-background opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-caps text-label-caps mt-1">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-burnt-earth text-background px-4 py-1 rounded-none translate-y-0.5 transition-transform hover:opacity-100" href="#">
+<span class="material-symbols-outlined" data-icon="content_cut">content_cut</span>
+<span class="font-label-caps text-label-caps mt-1">BOOK</span>
+</a>
+<a class="flex flex-col items-center justify-center text-background dark:text-on-background opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-label-caps text-label-caps mt-1">LOCATION</span>
+</a>
+<a class="flex flex-col items-center justify-center text-background dark:text-on-background opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-label-caps text-label-caps mt-1">MENU</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,25 @@
+{
+  "brand": "Eglis Cut Club",
+  "nav": {
+    "home": "Ballina",
+    "services": "Sherbimet",
+    "book": "Rezervo",
+    "locations": "Lokacionet",
+    "admin": "Admin"
+  },
+  "home": {
+    "eyebrow": "Qethje verore ne Sarande",
+    "title": "Qethje te pastra nga rruloti.",
+    "intro": "Rezervim i thjeshte per dite plazhi, nete te vona dhe rifreskim te rregullt.",
+    "cta": "Rezervo"
+  },
+  "booking": {
+    "title": "Rezervo orarin",
+    "intro": "Fresh Cut dhe Full Reset jane sherbimet online per versionin e pare.",
+    "fullyBooked": "E zene per kete date. Zgjidh nje dite tjeter ose telefono Eglis."
+  },
+  "admin": {
+    "title": "Admin",
+    "intro": "Menaxho rezervimet, bllokimet, sezonin dhe sherbimet."
+  }
+}
